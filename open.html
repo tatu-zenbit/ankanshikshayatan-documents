@@ -198,7 +198,7 @@
     <a
       id="storeBtn"
       class="store-btn"
-      href="https://play.google.com/store/apps/details?id=com.ankantuli.artcentre"
+      href="https://play.google.com/store/apps/details?id=com.ankan.shikshayatan"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -219,10 +219,9 @@
     const studentId = urlParams.get('studentId') || '';
 
     // ── Build scheme URL — passes studentId into the app ─────────────────────
-    // App receives: ankantuliartcentre:///open?studentId=abc123
     const SCHEME = studentId
-      ? `ankantuliartcentre:///?studentId=${encodeURIComponent(studentId)}`
-      : `ankantuliartcentre:///`;
+      ? `ankanshikshayatan:///?studentId=${encodeURIComponent(studentId)}`
+      : `ankanshikshayatan:///`;
 
     // ── DOM refs ──────────────────────────────────────────────────────────────
     const fill        = document.getElementById('progressFill');
